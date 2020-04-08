@@ -1,0 +1,189 @@
+.pagetwo_box {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: relative;
+}
+
+.pagetwo_box .back1 {
+    width: 40%;
+    height: 44%;
+    margin-left: 30%;
+}
+
+.pagetwo_box .back2 {
+    width: 40%;
+    height: 44%;
+    margin-left: 30%;
+    margin-top: -10%;
+}
+
+.pagetwo_box .back3 {
+    width: 40%;
+    height: 44%;
+    margin-left: 30%;
+    margin-top: -12%;
+}
+
+.pagetwo_box .mjximg {
+    width: 50%;
+    height: 60%;
+}
+
+.pagetwo_box .img1box {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 20%;
+    left: 5%;
+}
+
+.pagetwo_box .img1box img {
+    width: 100%;
+    height: 100%;
+}
+
+.pagetwo_box .shoes_box {
+    position: absolute;
+    width: 48%;
+    height: 80%;
+    top: 12vh;
+    right: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pagetwo_box .shoes_box .show_item {
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    /* background: green; */
+}
+
+.shoes_box .show_item .itemimg{
+    width: 100%;
+    height: 80%;
+    background: pink;
+    overflow: hidden;
+    position: relative;
+}
+
+.show_item .itemimg .shoe {
+    width: 100%;
+    height: 100%;
+    transform: scale(1,1);
+}
+
+.shoes_box .show_item p {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-top: 15px;
+}
+
+.shoes_box .show_item .solid {
+    width: 0%;
+    height: 1px;
+    background: white;
+    margin-top: 20px;
+}
+
+/* 动画 */
+.shoes_box .show_item .box_j {
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.show_item .box_j img {
+    width: 24%;
+    height: 39%;
+    position: absolute;
+    top: 30%;
+    left: 38%;
+}
+
+.show {
+    animation: show 0.5s forwards ;
+}
+
+.noshow {
+    animation: noshow 0.5s forwards ;
+}
+
+.c {
+    animation: c 0.5s forwards;
+}
+
+.nc {
+    animation: nc 0.5s forwards;
+}
+
+.d {
+    animation: d 0.5s forwards;
+}
+
+.nd {
+    animation: nd 0.5s forwards;
+}
+
+/* 定义动画 */
+@keyframes show{
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes noshow{
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+
+@keyframes c{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes nc{
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes d{
+    0% {
+        transform: scale(1,1);
+    }
+    100% {
+        transform: scale(1.2,1.2);
+    }
+}
+
+@keyframes nd{
+    0% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
